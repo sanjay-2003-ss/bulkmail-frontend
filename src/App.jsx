@@ -99,7 +99,7 @@ function App() {
     setStatus("Sending emails...");
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEUR}/sendemail`, {
+      const response = await axios.post("http://localhost:5000/sendemail", {
         msg,
         emails
       });
