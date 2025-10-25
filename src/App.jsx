@@ -99,7 +99,7 @@ function App() {
     setStatus("Sending emails...");
 
     try {
-      const response = await axios.post("http://localhost:5000/sendemail", {
+      const response = await axios.get("http://localhost:5000/sendemail", {
         msg,
         emails
       });
