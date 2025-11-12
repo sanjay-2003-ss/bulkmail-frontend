@@ -84,5 +84,16 @@ This project is for educational and practice purposes only.
 It is not intended for large-scale or commercial email marketing.
 All email operations rely on testing credentials and secure environment variables.
 
-## 📂 Project Structure  
+🎯 Outcome
+
+The final version of BulkMail is a fully functional full-stack application combining a responsive frontend with an integrated backend API.
+It demonstrates how to build, connect, and deploy separate services while maintaining clean architecture and user-focused design.
+
+🧩 Future Improvements
+
+✅ Add user authentication and login system
+✅ Implement email history and templates
+✅ Connect with a database (MongoDB or PostgreSQL)
+✅ Add analytics for sent and failed emails
+✅ Improve error handling and toast notifications
 
