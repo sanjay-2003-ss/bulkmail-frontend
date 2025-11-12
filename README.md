@@ -1,16 +1,88 @@
-# React + Vite
+# 📧 BulkMail – Full Stack Email Sending Web App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BulkMail is a **full-stack email automation web application** built using **HTML, TailwindCSS, JavaScript (frontend)** and **Node.js, Express.js (backend)**.  
+It allows users to compose, manage, and send multiple emails simultaneously through a clean and responsive interface.  
+This project demonstrates **frontend–backend integration**, **API communication**, and **email sending functionality** in a production-style setup.  
 
-Currently, two official plugins are available:
+👉 **Live Demo**  
+- 🌐 Frontend: [https://bulkmail-frontend-lemon-five.vercel.app](https://bulkmail-frontend-lemon-five.vercel.app)  
+- ⚙️ Backend: [https://bulkmail-backend-mu.vercel.app](https://bulkmail-backend-mu.vercel.app)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📘 Overview  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The **BulkMail App** was created to understand how real-world email tools combine frontend interactivity with backend functionality.  
+Users can compose messages, add multiple recipients, and send them directly through the integrated backend API.  
+While simple in scope, it reflects a realistic flow of how modern web apps handle communication between **client and server**.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features  
+
+- 📨 **Compose and Send Emails** – Users can add a subject, message, and multiple recipients.  
+- 👥 **Bulk Sending** – Supports sending emails to multiple addresses in one request.  
+- 💬 **Frontend–Backend Integration** – Uses `fetch()` to send data to the backend API.  
+- 📩 **Live Response Feedback** – Displays success or error messages in real time.  
+- 💡 **Form Validation** – Basic input validation on both client and server sides.  
+- 📱 **Responsive UI** – Fully optimized for desktop and mobile devices using TailwindCSS.  
+- ⚡ **Deployed on Vercel** – Both frontend and backend are hosted on separate Vercel environments.  
+
+---
+
+## 🛠 Tech Stack  
+
+### Frontend  
+- **HTML5** – Page structure and markup  
+- **TailwindCSS** – Utility-first styling and responsiveness  
+- **JavaScript (ES6)** – Interactivity and API communication  
+
+### Backend  
+- **Node.js + Express.js** – Server-side logic and routing  
+- **Nodemailer** – Email sending via SMTP  
+- **CORS / Body-Parser** – Middleware for request handling  
+- **dotenv** – For environment variable management  
+- **Vercel** – For serverless backend deployment
+
+ bulkmail/
+│
+├── frontend/
+│ ├── index.html # Main UI
+│ ├── style.css # Styling (Tailwind)
+│ ├── script.js # API calls & interactivity
+│ └── README.md
+│
+├── backend/
+│ ├── server.js # Express server
+│ ├── routes/ # API routes
+│ ├── controllers/ # Mail handling logic
+│ ├── package.json # Dependencies
+│ └── .env # Email credentials (not committed)
+│
+└── README.md
+
+---
+
+## 🔗 Integration Flow  
+
+1. The **frontend** captures email details (recipients, subject, message).  
+2. A `fetch()` POST request is sent to the **backend API endpoint**.  
+3. The **backend** validates input and triggers **Nodemailer** to send the emails.  
+4. The backend returns a JSON response.  
+5. The **frontend** displays feedback (success/error) to the user.  
+
+💡 Learning Outcomes
+Gained hands-on experience integrating frontend and backend.
+Learned to handle HTTP requests and JSON responses using fetch() and Express.
+Practiced Nodemailer integration for sending real emails via backend.
+Strengthened understanding of CORS, API design, and deployment workflows.
+Improved at building responsive UIs with TailwindCSS.
+Gained confidence deploying multi-service projects on Vercel.
+
+⚠️ Disclaimer
+This project is for educational and practice purposes only.
+It is not intended for large-scale or commercial email marketing.
+All email operations rely on testing credentials and secure environment variables.
+
+## 📂 Project Structure  
+
